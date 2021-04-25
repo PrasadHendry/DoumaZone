@@ -40,7 +40,7 @@ namespace DoumaZone
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(42, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 15);
             this.label1.TabIndex = 0;
@@ -48,7 +48,7 @@ namespace DoumaZone
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(50, 175);
+            this.button1.Location = new System.Drawing.Point(80, 194);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -59,7 +59,7 @@ namespace DoumaZone
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(27, 84);
+            this.radioButton1.Location = new System.Drawing.Point(57, 103);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(98, 19);
             this.radioButton1.TabIndex = 4;
@@ -70,7 +70,7 @@ namespace DoumaZone
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(27, 109);
+            this.radioButton2.Location = new System.Drawing.Point(57, 128);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(75, 19);
             this.radioButton2.TabIndex = 5;
@@ -81,7 +81,7 @@ namespace DoumaZone
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(27, 134);
+            this.radioButton3.Location = new System.Drawing.Point(57, 153);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(55, 19);
             this.radioButton3.TabIndex = 6;
@@ -92,7 +92,7 @@ namespace DoumaZone
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 53);
+            this.label2.Location = new System.Drawing.Point(42, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 15);
             this.label2.TabIndex = 7;
@@ -102,7 +102,7 @@ namespace DoumaZone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(170, 227);
+            this.ClientSize = new System.Drawing.Size(229, 239);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);

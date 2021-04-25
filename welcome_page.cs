@@ -26,21 +26,21 @@ namespace DoumaZone
             {
                 admin_page admin = new admin_page();
                 admin.Show();
-                this.Close();
+                this.Hide();
             }
 
             else if (radioButton2.Checked)
             {
                 event_co_page eventco = new event_co_page();
                 eventco.Show();
-                this.Close();
+                this.Hide();
             }
 
             else if (radioButton3.Checked)
             {
                 guest_page guest = new guest_page();
                 guest.Show();
-                this.Close();
+                this.Hide();
             }
 
             else
