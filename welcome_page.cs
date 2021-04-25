@@ -24,14 +24,14 @@ namespace DoumaZone
         {
             if (radioButton1.Checked)
             {
-                admin_page admin = new admin_page();
+                admin_login admin = new admin_login();
                 admin.Show();
                 this.Hide();
             }
 
             else if (radioButton2.Checked)
             {
-                event_co_page eventco = new event_co_page();
+                event_co_login eventco = new event_co_login();
                 eventco.Show();
                 this.Hide();
             }

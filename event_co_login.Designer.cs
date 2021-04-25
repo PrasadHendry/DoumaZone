@@ -1,7 +1,7 @@
 ﻿
 namespace DoumaZone
 {
-    partial class admin_page
+    partial class event_co_login
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,10 @@ namespace DoumaZone
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // admin_page
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1451, 633);
-            this.Name = "admin_page";
-            this.Text = "admin_page";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "event_co_login";
         }
 
         #endregion
