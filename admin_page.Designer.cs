@@ -37,6 +37,7 @@ namespace DoumaZone
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1451, 633);
             this.Name = "admin_page";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin_page";
             this.ResumeLayout(false);
 

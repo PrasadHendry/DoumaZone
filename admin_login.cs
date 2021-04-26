@@ -23,7 +23,7 @@ namespace DoumaZone
 
 
 
-            if (textBox1.Text == "")
+            if (textBox1.Text == "admin" && textBox2.Text == "admin")
             {
                 admin_page admin = new admin_page();
                 admin.Show();
@@ -32,6 +32,13 @@ namespace DoumaZone
 
             else
                 MessageBox.Show("The entered username or password is incorrect. Please try again.");
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            welcome_page page = new welcome_page();
+            page.Show();
+            this.Close();
         }
     }
 }

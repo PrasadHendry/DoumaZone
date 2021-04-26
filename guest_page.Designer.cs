@@ -35,8 +35,9 @@ namespace DoumaZone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1441, 626);
+            this.ClientSize = new System.Drawing.Size(885, 419);
             this.Name = "guest_page";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "guest_page";
             this.ResumeLayout(false);
 

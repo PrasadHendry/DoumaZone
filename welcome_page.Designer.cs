@@ -110,6 +110,7 @@ namespace DoumaZone
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "welcome_page";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "welcome_page";
             this.Load += new System.EventHandler(this.welcome_page_Load);
             this.ResumeLayout(false);
