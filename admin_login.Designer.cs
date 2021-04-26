@@ -92,12 +92,13 @@ namespace DoumaZone
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(152, 223);
+            this.linkLabel1.Location = new System.Drawing.Point(122, 221);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(98, 15);
+            this.linkLabel1.Size = new System.Drawing.Size(164, 15);
             this.linkLabel1.TabIndex = 6;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "forgot password?";
+            this.linkLabel1.Text = "Wrong user? Click to go back.";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // admin_login
             // 
@@ -112,6 +113,7 @@ namespace DoumaZone
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "admin_login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin_login";
             this.ResumeLayout(false);
             this.PerformLayout();

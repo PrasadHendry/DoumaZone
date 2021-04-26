@@ -14,5 +14,12 @@ namespace DoumaZone
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            guest_page gp1 = new guest_page();
+            gp1.Show();
+            this.Hide();
+        }
     }
 }

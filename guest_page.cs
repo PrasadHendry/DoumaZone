@@ -14,5 +14,12 @@ namespace DoumaZone
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            welcome_page wp = new welcome_page();
+            wp.Show();
+            this.Hide();
+        }
     }
 }
