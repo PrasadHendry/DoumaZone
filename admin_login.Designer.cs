@@ -58,7 +58,7 @@ namespace DoumaZone
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Aqua;
-            this.label1.Location = new System.Drawing.Point(28, 80);
+            this.label1.Location = new System.Drawing.Point(26, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(386, 33);
             this.label1.TabIndex = 1;
