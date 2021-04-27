@@ -81,7 +81,7 @@ namespace DoumaZone
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(246, 177);
+            this.label2.Location = new System.Drawing.Point(246, 173);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 23);
             this.label2.TabIndex = 9;

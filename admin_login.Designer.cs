@@ -70,7 +70,7 @@ namespace DoumaZone
             this.label2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label2.Location = new System.Drawing.Point(208, 161);
+            this.label2.Location = new System.Drawing.Point(208, 157);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 23);
             this.label2.TabIndex = 2;
@@ -120,7 +120,7 @@ namespace DoumaZone
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DoumaZone.Properties.Resources.anime_city_cityscape_cloud_nd_3840x2160;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(786, 471);
+            this.ClientSize = new System.Drawing.Size(842, 471);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
