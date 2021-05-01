@@ -17,7 +17,7 @@ namespace DoumaZone
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new guest_page());
+            Application.Run(new admin_page());
         }
     }
 }
