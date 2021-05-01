@@ -25,29 +25,6 @@ namespace DoumaZone
             this.Hide();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                con.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "select * from event_co_acc";
-                cmd.ExecuteNonQuery();
-                DataTable dt = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-
-            catch(Exception ex)
-            {
-                MessageBox.Show("Unable to display the table.");
-            }
-
-            con.Close();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             try
@@ -55,8 +32,9 @@ namespace DoumaZone
                 con.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "insert into event_co_acc values ( '" + Convert.ToInt32(textBox1.Text) + "', '" + textBox2.Text + "', '" + Convert.ToInt32(textBox3.Text) + "', '" + textBox4.Text + "', '" + Convert.ToInt32(textBox5.Text) + "')";
+                cmd.CommandText = "insert into event_co_acc values ( '" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + textBox5.Text + "')";
                 cmd.ExecuteNonQuery();
+                con.Close();
                 MessageBox.Show("Event added successfully.");
             }
 
@@ -65,8 +43,11 @@ namespace DoumaZone
                 MessageBox.Show("Unable to add the event.");
                 MessageBox.Show(ex.ToString());
             }
+        }
 
-            con.Close();
+        private void button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
