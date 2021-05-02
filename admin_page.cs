@@ -30,24 +30,96 @@ namespace DoumaZone
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand();
+                SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "insert into event_co_acc values ( '" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + textBox5.Text + "')";
+                cmd.CommandText = "insert into event_co_acc values('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + textBox5.Text + "')";
                 cmd.ExecuteNonQuery();
                 con.Close();
-                MessageBox.Show("Event added successfully.");
+                MessageBox.Show("Event Added Successfully");
+                display();
             }
-
             catch (Exception ex)
             {
-                MessageBox.Show("Unable to add the event.");
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from event_co_acc where event_co_id = '" + textBox1.Text + "'";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            con.Close();
+        }
 
+        public void display()
+        {
+            try
+            {
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "select * from event_co_acc";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void admin_page_Load(object sender, EventArgs e)
+        {
+            display();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "update event_co_acc set name = '" + textBox2.Text + "',event_id = '" + textBox3.Text + "', event_name = '" + textBox4.Text + "', phone_no = '" + textBox5.Text + "' where event_co_id = '" + textBox1.Text + "'";
+                cmd.ExecuteNonQuery();
+                con.Close();
+                display();
+                MessageBox.Show("Record Successfully Updated");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "delete from event_co_acc where event_co_id = '" + textBox1.Text + "'";
+                cmd.ExecuteNonQuery();
+                con.Close();
+                display();
+                MessageBox.Show("Record Deleted successfully");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }
