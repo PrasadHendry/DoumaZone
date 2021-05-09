@@ -92,8 +92,11 @@ namespace DoumaZone
             this.textBox1.Location = new System.Drawing.Point(308, 157);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(207, 27);
             this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "admin";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox2
             // 
@@ -106,7 +109,7 @@ namespace DoumaZone
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(354, 315);
+            this.linkLabel1.Location = new System.Drawing.Point(399, 310);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(205, 20);
             this.linkLabel1.TabIndex = 6;

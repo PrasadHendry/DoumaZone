@@ -46,16 +46,16 @@ namespace DoumaZone
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1510, 12);
+            this.button1.Location = new System.Drawing.Point(1483, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 36);
             this.button1.TabIndex = 0;
@@ -65,14 +65,14 @@ namespace DoumaZone
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(147, 204);
+            this.textBox5.Location = new System.Drawing.Point(147, 252);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(166, 27);
             this.textBox5.TabIndex = 16;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(274, 269);
+            this.button5.Location = new System.Drawing.Point(270, 318);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 35);
             this.button5.TabIndex = 14;
@@ -82,7 +82,7 @@ namespace DoumaZone
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(181, 269);
+            this.button4.Location = new System.Drawing.Point(177, 318);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 35);
             this.button4.TabIndex = 13;
@@ -92,7 +92,7 @@ namespace DoumaZone
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(99, 269);
+            this.button3.Location = new System.Drawing.Point(95, 318);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 35);
             this.button3.TabIndex = 12;
@@ -102,7 +102,7 @@ namespace DoumaZone
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(17, 269);
+            this.button2.Location = new System.Drawing.Point(13, 318);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 35);
             this.button2.TabIndex = 11;
@@ -112,14 +112,14 @@ namespace DoumaZone
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(147, 160);
+            this.textBox2.Location = new System.Drawing.Point(147, 167);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(166, 27);
             this.textBox2.TabIndex = 8;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(149, 117);
+            this.textBox1.Location = new System.Drawing.Point(147, 117);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(166, 27);
             this.textBox1.TabIndex = 7;
@@ -127,7 +127,7 @@ namespace DoumaZone
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 208);
+            this.label5.Location = new System.Drawing.Point(24, 252);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 20);
             this.label5.TabIndex = 6;
@@ -136,16 +136,16 @@ namespace DoumaZone
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(80, 167);
+            this.label3.Location = new System.Drawing.Point(63, 167);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 20);
+            this.label3.Size = new System.Drawing.Size(78, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Name:";
+            this.label3.Text = "Username:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 124);
+            this.label2.Location = new System.Drawing.Point(45, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 3;
@@ -198,40 +198,47 @@ namespace DoumaZone
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(1510, 54);
+            this.button6.Location = new System.Drawing.Point(1483, 54);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(136, 40);
             this.button6.TabIndex = 17;
-            this.button6.Text = "Update Password";
+            this.button6.Text = "Update Profile";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // label4
+            // label8
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 397);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 20);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "View Events:";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(68, 213);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(73, 20);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Password:";
             // 
-            // dataGridView2
+            // textBox3
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(24, 439);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 29;
-            this.dataGridView2.Size = new System.Drawing.Size(925, 350);
-            this.dataGridView2.TabIndex = 19;
+            this.textBox3.Location = new System.Drawing.Point(147, 210);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(166, 27);
+            this.textBox3.TabIndex = 21;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(13, 404);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(115, 56);
+            this.button7.TabIndex = 22;
+            this.button7.Text = "View Events";
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // admin_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1658, 844);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(1630, 473);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label6);
@@ -254,7 +261,6 @@ namespace DoumaZone
             this.Load += new System.EventHandler(this.admin_page_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,7 +285,8 @@ namespace DoumaZone
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button7;
     }
 }
