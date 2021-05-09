@@ -32,7 +32,7 @@ namespace DoumaZone
                 con.Open();
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "insert into event_co_acc values('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + textBox5.Text + "')";
+                cmd.CommandText = "insert into event_co_acc values('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox5.Text + "')";
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Event Added Successfully");
@@ -91,7 +91,7 @@ namespace DoumaZone
                 con.Open();
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "update event_co_acc set name = '" + textBox2.Text + "',event_id = '" + textBox3.Text + "', event_name = '" + textBox4.Text + "', phone_no = '" + textBox5.Text + "' where event_co_id = '" + textBox1.Text + "'";
+                cmd.CommandText = "update event_co_acc set name = '" + textBox2.Text  + "', phone_no = '" + textBox5.Text + "' where event_co_id = '" + textBox1.Text + "'";
                 cmd.ExecuteNonQuery();
                 con.Close();
                 display();
@@ -120,6 +120,11 @@ namespace DoumaZone
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
