@@ -36,12 +36,6 @@ namespace DoumaZone
                 this.Hide();
             }
 
-            else if (radioButton3.Checked)
-            {
-                guest_page guest = new guest_page();
-                guest.Show();
-                this.Hide();
-            }
 
             else
                 MessageBox.Show("Please select one of the options above before submitting.");
