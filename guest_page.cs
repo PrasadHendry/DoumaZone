@@ -21,5 +21,22 @@ namespace DoumaZone
             wp.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            EventView view = new EventView();
+            this.Hide();
+            view.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("There is no info.");
+        }
     }
 }

@@ -11,6 +11,8 @@ namespace DoumaZone
 {
     public partial class admin_login : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\siddh\Documents\DoumaDB.mdf;Integrated Security=True;Connect Timeout=30");
+
         public admin_login()
         {
             InitializeComponent();
@@ -18,25 +20,36 @@ namespace DoumaZone
 
         private void button1_Click(object sender, EventArgs e)
         {
+            con.Open();
 
-            //select username from DoumaDB where id == 1
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from Accounts where Id = 1 and password = '" + textBox2.Text + "'";
+            cmd.ExecuteNonQuery();
 
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
 
-
-            if (textBox1.Text == "admin" && textBox2.Text == "admin")
+            if (dt.Rows.Count != 0)
             {
+                cmd.CommandText = "update Accounts set login = 1 where Id = 1 ";
+                cmd.ExecuteNonQuery();
+
+                con.Close();
+                
                 admin_page admin = new admin_page();
                 admin.Show();
                 this.Hide();
             }
 
             else
-                MessageBox.Show("The entered username or password is incorrect. Please try again.");
+                MessageBox.Show("The entered password is incorrect. Please try again.");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            welcome_page page = new welcome_page();
+            guest_page page = new guest_page();
             page.Show();
             this.Close();
         }

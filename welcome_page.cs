@@ -15,11 +15,6 @@ namespace DoumaZone
             InitializeComponent();
         }
 
-        private void welcome_page_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
@@ -38,6 +33,13 @@ namespace DoumaZone
 
             else
                 MessageBox.Show("Please select one of the options above before submitting.");
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            guest_page gp = new guest_page();
+            this.Close();
+            gp.Show();
         }
     }
 }
