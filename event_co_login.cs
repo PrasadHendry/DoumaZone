@@ -23,10 +23,10 @@ namespace DoumaZone
         private void button1_Click(object sender, EventArgs e)
         {
             con.Open();
-
+            // and username != 'admin'
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from Accounts where username = '" + textBox1.Text + "' and password = '" + textBox2.Text + "'";
+            cmd.CommandText = "select * from Accounts where username = '" + textBox1.Text + "' and password = '" + textBox2.Text + "' ";
             cmd.ExecuteNonQuery();
 
             DataTable dt = new DataTable();

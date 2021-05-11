@@ -36,8 +36,17 @@ namespace DoumaZone
 
         private void button2_Click(object sender, EventArgs e)
         {
-            UpdateEventCoPass pass = new UpdateEventCoPass();
-            pass.Show();
+            if (event_co_login.id == 1)
+            {
+                UpdateAdminPass pass1 = new UpdateAdminPass();
+                pass1.Show();
+            }
+
+            else
+            {
+                UpdateEventCoPass pass = new UpdateEventCoPass();
+                pass.Show();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -70,7 +79,7 @@ namespace DoumaZone
 
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "delete from event where event_id = '" + textBox1.Text + "'";
+                cmd.CommandText = "delete from event where event_id = '" + textBox1.Text + "' and event_co_id = '" + event_co_login.id + "'";
 
                 if (cmd.ExecuteNonQuery() != 0)
                     MessageBox.Show("Event deleted successfully!!");
@@ -89,8 +98,6 @@ namespace DoumaZone
 
         private void button5_Click(object sender, EventArgs e)
         {
-            //Search by event_co_id
-
             try
             {
                 con.Open();
@@ -100,8 +107,13 @@ namespace DoumaZone
                 cmd.CommandText = "select * from event where event_co_id = '" + event_co_login.id + "'";
                 cmd.ExecuteNonQuery();
 
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+
                 con.Close();
-                display();
             }
             catch (Exception ex)
             {
@@ -117,6 +129,21 @@ namespace DoumaZone
 
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
+
+                cmd.CommandText = "select * from event where event_co_id = '" + event_co_login.id + "' ";
+                cmd.ExecuteNonQuery();
+
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+
+                if (dt.Rows.Count == 5)
+                {
+                    MessageBox.Show("You have reached the max number of events.");
+                    con.Close();
+                    return;
+                }
+
                 cmd.CommandText = "insert into event values('" + textBox1.Text + "', '" + comboBox1.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + dateTimePicker1.Value + "', '" + dateTimePicker2.Value + "', '" + event_co_login.id + "' )";
                 cmd.ExecuteNonQuery();
 
