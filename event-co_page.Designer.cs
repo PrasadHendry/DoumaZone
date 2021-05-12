@@ -40,9 +40,7 @@ namespace DoumaZone
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -52,6 +50,8 @@ namespace DoumaZone
             this.button7 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,18 +156,6 @@ namespace DoumaZone
             this.label7.TabIndex = 31;
             this.label7.Text = "Begin Date:";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(572, 47);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.RightToLeftLayout = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(212, 23);
-            this.dateTimePicker1.TabIndex = 32;
-            this.dateTimePicker1.Value = new System.DateTime(2021, 5, 10, 0, 0, 0, 0);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -176,18 +164,6 @@ namespace DoumaZone
             this.label8.Size = new System.Drawing.Size(57, 15);
             this.label8.TabIndex = 33;
             this.label8.Text = "End Date:";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Checked = false;
-            this.dateTimePicker2.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(572, 78);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(212, 23);
-            this.dateTimePicker2.TabIndex = 34;
-            this.dateTimePicker2.Value = new System.DateTime(2021, 5, 10, 0, 0, 0, 0);
             // 
             // comboBox1
             // 
@@ -277,11 +253,29 @@ namespace DoumaZone
             this.dataGridView1.Size = new System.Drawing.Size(520, 203);
             this.dataGridView1.TabIndex = 42;
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(565, 47);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(104, 23);
+            this.textBox2.TabIndex = 43;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(565, 79);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(104, 23);
+            this.textBox5.TabIndex = 44;
+            // 
             // event_co_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1002, 376);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button7);
@@ -290,9 +284,7 @@ namespace DoumaZone
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -327,9 +319,7 @@ namespace DoumaZone
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button5;
@@ -339,5 +329,7 @@ namespace DoumaZone
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }

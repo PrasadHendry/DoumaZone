@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 namespace DoumaZone
 {
@@ -57,7 +58,7 @@ namespace DoumaZone
 
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "update event set event_cat = '" + comboBox1.Text + "', event_name = '" + textBox3.Text + "', event_name = '" + textBox4.Text + "', begin_date = '" + dateTimePicker1.Value + "', end_date = '" + dateTimePicker2.Value + "' where event_id = '" + textBox1.Text + "'";
+                cmd.CommandText = "update event set event_cat = '" + comboBox1.Text + "', event_name = '" + textBox3.Text + "', event_name = '" + textBox4.Text + "', begin_date = '" + textBox2.Text + "', end_date = '" + textBox5.Text + "' where event_id = '" + textBox1.Text + "'";
                 cmd.ExecuteNonQuery();
 
                 con.Close();
@@ -68,6 +69,7 @@ namespace DoumaZone
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+                con.Close();
             }
         }
 
@@ -93,6 +95,7 @@ namespace DoumaZone
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+                con.Close();
             }
         }
 
@@ -118,11 +121,18 @@ namespace DoumaZone
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+                con.Close();
             }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            if (!Regex.IsMatch(textBox2.Text, @"^([0][1-9]|10|11|12)-([0][1-9]|[12]{1}[0-9]|30|31)-(\d{4})$") || !Regex.IsMatch(textBox5.Text, @"^([0][1-9]|10|11|12)-([0][1-9]|[12]{1}[0-9]|30|31)-(\d{4})$"))
+            {
+                MessageBox.Show("Invalid date. Format: mm-dd-yyyy");
+                return;
+            }
+
             try
             {
                 con.Open();
@@ -144,7 +154,7 @@ namespace DoumaZone
                     return;
                 }
 
-                cmd.CommandText = "insert into event values('" + textBox1.Text + "', '" + comboBox1.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + dateTimePicker1.Value + "', '" + dateTimePicker2.Value + "', '" + event_co_login.id + "' )";
+                cmd.CommandText = "insert into event values('" + textBox1.Text + "', '" + comboBox1.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + textBox2.Text + "', '" + textBox5.Text + "', '" + event_co_login.id + "' )";
                 cmd.ExecuteNonQuery();
 
                 con.Close();
@@ -156,6 +166,7 @@ namespace DoumaZone
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+                con.Close();
             }
         }
 
@@ -193,6 +204,7 @@ namespace DoumaZone
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+                con.Close();
             }
         }
     }
