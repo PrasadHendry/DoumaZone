@@ -81,7 +81,7 @@ namespace DoumaZone
             // 
             this.button3.Location = new System.Drawing.Point(31, 533);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 45);
+            this.button3.Size = new System.Drawing.Size(146, 45);
             this.button3.TabIndex = 4;
             this.button3.Text = "Search by date";
             this.button3.UseVisualStyleBackColor = true;
@@ -89,7 +89,7 @@ namespace DoumaZone
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(147, 548);
+            this.textBox1.Location = new System.Drawing.Point(195, 551);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(114, 27);
