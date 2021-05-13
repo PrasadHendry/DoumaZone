@@ -56,10 +56,9 @@ namespace DoumaZone
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(969, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(1107, 15);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 27);
+            this.button1.Size = new System.Drawing.Size(136, 36);
             this.button1.TabIndex = 0;
             this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = true;
@@ -67,18 +66,16 @@ namespace DoumaZone
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(129, 169);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox4.Location = new System.Drawing.Point(147, 225);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(146, 23);
+            this.textBox4.Size = new System.Drawing.Size(166, 27);
             this.textBox4.TabIndex = 16;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(236, 238);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Location = new System.Drawing.Point(270, 317);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(66, 26);
+            this.button5.Size = new System.Drawing.Size(75, 35);
             this.button5.TabIndex = 14;
             this.button5.Text = "Search";
             this.button5.UseVisualStyleBackColor = true;
@@ -86,10 +83,9 @@ namespace DoumaZone
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(155, 238);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(177, 317);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(76, 26);
+            this.button4.Size = new System.Drawing.Size(87, 35);
             this.button4.TabIndex = 13;
             this.button4.Text = "Delete";
             this.button4.UseVisualStyleBackColor = true;
@@ -97,10 +93,9 @@ namespace DoumaZone
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(83, 238);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(95, 317);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(66, 26);
+            this.button3.Size = new System.Drawing.Size(75, 35);
             this.button3.TabIndex = 12;
             this.button3.Text = "Update";
             this.button3.UseVisualStyleBackColor = true;
@@ -108,10 +103,9 @@ namespace DoumaZone
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(11, 238);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(13, 317);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 26);
+            this.button2.Size = new System.Drawing.Size(75, 35);
             this.button2.TabIndex = 11;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = true;
@@ -119,79 +113,76 @@ namespace DoumaZone
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(129, 115);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Location = new System.Drawing.Point(147, 153);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(146, 23);
+            this.textBox2.Size = new System.Drawing.Size(166, 27);
             this.textBox2.TabIndex = 8;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(129, 88);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Location = new System.Drawing.Point(147, 117);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(146, 23);
+            this.textBox1.Size = new System.Drawing.Size(166, 27);
             this.textBox1.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 172);
+            this.label5.Location = new System.Drawing.Point(27, 229);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 15);
+            this.label5.Size = new System.Drawing.Size(117, 20);
             this.label5.TabIndex = 6;
             this.label5.Text = "Phone No (+91):";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(55, 118);
+            this.label3.Location = new System.Drawing.Point(63, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 15);
+            this.label3.Size = new System.Drawing.Size(78, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = "Username:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 91);
+            this.label2.Location = new System.Drawing.Point(47, 121);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 15);
+            this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Event Co. ID: ";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 40);
+            this.label1.Location = new System.Drawing.Point(17, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 15);
+            this.label1.Size = new System.Drawing.Size(128, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Manage Event Co.";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(326, 57);
+            this.label6.Location = new System.Drawing.Point(373, 76);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 15);
+            this.label6.Size = new System.Drawing.Size(103, 20);
             this.label6.TabIndex = 3;
             this.label6.Text = "Event Co. Info:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(67, 93);
+            this.label7.Location = new System.Drawing.Point(77, 124);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 15);
+            this.label7.Size = new System.Drawing.Size(0, 20);
             this.label7.TabIndex = 2;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(969, 42);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Location = new System.Drawing.Point(1107, 56);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(119, 30);
+            this.button6.Size = new System.Drawing.Size(136, 40);
             this.button6.TabIndex = 17;
             this.button6.Text = "Update Profile";
             this.button6.UseVisualStyleBackColor = true;
@@ -200,54 +191,56 @@ namespace DoumaZone
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(58, 145);
+            this.label8.Location = new System.Drawing.Point(66, 193);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 15);
+            this.label8.Size = new System.Drawing.Size(73, 20);
             this.label8.TabIndex = 20;
             this.label8.Text = "Password:";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(129, 142);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3.Location = new System.Drawing.Point(147, 189);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(146, 23);
+            this.textBox3.Size = new System.Drawing.Size(166, 27);
             this.textBox3.TabIndex = 21;
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(326, 318);
+            this.dataGridView2.Location = new System.Drawing.Point(373, 424);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(748, 181);
+            this.dataGridView2.Size = new System.Drawing.Size(855, 241);
             this.dataGridView2.TabIndex = 22;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(326, 85);
+            this.dataGridView1.Location = new System.Drawing.Point(373, 113);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(556, 179);
+            this.dataGridView1.Size = new System.Drawing.Size(635, 239);
             this.dataGridView1.TabIndex = 23;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(326, 288);
+            this.label4.Location = new System.Drawing.Point(373, 384);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 15);
+            this.label4.Size = new System.Drawing.Size(78, 20);
             this.label4.TabIndex = 24;
             this.label4.Text = "Event Info:";
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(11, 269);
+            this.button7.Location = new System.Drawing.Point(13, 359);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(66, 23);
+            this.button7.Size = new System.Drawing.Size(75, 31);
             this.button7.TabIndex = 25;
             this.button7.Text = "Refresh";
             this.button7.UseVisualStyleBackColor = true;
@@ -255,9 +248,9 @@ namespace DoumaZone
             // 
             // admin_page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 530);
+            this.ClientSize = new System.Drawing.Size(1257, 707);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView1);
@@ -279,6 +272,9 @@ namespace DoumaZone
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "admin_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.admin_page_Load);
