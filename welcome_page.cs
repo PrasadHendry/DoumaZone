@@ -35,7 +35,7 @@ namespace DoumaZone
                 MessageBox.Show("Please select one of the options above before submitting.");
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             guest_page gp = new guest_page();
             this.Close();

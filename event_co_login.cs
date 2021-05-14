@@ -55,11 +55,18 @@ namespace DoumaZone
             con.Close();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             welcome_page page = new welcome_page();
             page.Show();
             this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            guest_page page = new guest_page();
+            page.Show();
+            this.Close();
         }
     }
 }
