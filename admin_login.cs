@@ -45,6 +45,8 @@ namespace DoumaZone
 
             else
                 MessageBox.Show("The entered password is incorrect. Please try again.");
+
+            con.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

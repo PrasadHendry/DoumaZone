@@ -52,12 +52,13 @@ namespace DoumaZone
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1003, 12);
+            this.button1.Location = new System.Drawing.Point(1173, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 36);
             this.button1.TabIndex = 1;
@@ -67,7 +68,7 @@ namespace DoumaZone
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1003, 53);
+            this.button2.Location = new System.Drawing.Point(1173, 63);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 36);
             this.button2.TabIndex = 2;
@@ -123,7 +124,7 @@ namespace DoumaZone
             // 
             this.textBox1.Location = new System.Drawing.Point(160, 63);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 27);
+            this.textBox1.Size = new System.Drawing.Size(97, 27);
             this.textBox1.TabIndex = 27;
             // 
             // textBox3
@@ -145,7 +146,7 @@ namespace DoumaZone
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(562, 67);
+            this.label7.Location = new System.Drawing.Point(591, 63);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(86, 20);
             this.label7.TabIndex = 31;
@@ -154,7 +155,7 @@ namespace DoumaZone
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(575, 109);
+            this.label8.Location = new System.Drawing.Point(604, 101);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 20);
             this.label8.TabIndex = 33;
@@ -176,7 +177,7 @@ namespace DoumaZone
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(265, 431);
+            this.button5.Location = new System.Drawing.Point(263, 431);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 35);
             this.button5.TabIndex = 39;
@@ -186,7 +187,7 @@ namespace DoumaZone
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(171, 431);
+            this.button4.Location = new System.Drawing.Point(170, 431);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 35);
             this.button4.TabIndex = 38;
@@ -216,7 +217,7 @@ namespace DoumaZone
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(347, 431);
+            this.button7.Location = new System.Drawing.Point(344, 431);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 35);
             this.button7.TabIndex = 40;
@@ -236,33 +237,40 @@ namespace DoumaZone
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(522, 195);
+            this.dataGridView1.Location = new System.Drawing.Point(511, 232);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(594, 271);
+            this.dataGridView1.Size = new System.Drawing.Size(798, 274);
             this.dataGridView1.TabIndex = 42;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(646, 63);
+            this.textBox2.Location = new System.Drawing.Point(683, 60);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(118, 27);
+            this.textBox2.Size = new System.Drawing.Size(135, 27);
             this.textBox2.TabIndex = 43;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(646, 105);
+            this.textBox5.Location = new System.Drawing.Point(683, 98);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(118, 27);
+            this.textBox5.Size = new System.Drawing.Size(135, 27);
             this.textBox5.TabIndex = 44;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(830, 8);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 45;
             // 
             // event_co_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1145, 501);
+            this.ClientSize = new System.Drawing.Size(1321, 522);
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.dataGridView1);
@@ -323,5 +331,6 @@ namespace DoumaZone
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }

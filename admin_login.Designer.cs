@@ -158,7 +158,7 @@ namespace DoumaZone
             this.MinimizeBox = false;
             this.Name = "admin_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "admin_login";
+            this.Text = "Admin login:";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

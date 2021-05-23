@@ -47,7 +47,7 @@ namespace DoumaZone
             this.label1.ForeColor = System.Drawing.Color.Lavender;
             this.label1.Location = new System.Drawing.Point(128, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(861, 68);
+            this.label1.Size = new System.Drawing.Size(855, 66);
             this.label1.TabIndex = 0;
             this.label1.Text = "DoumaZone \"ᴋ̲ʏ̲Ō̲ᴍ̲ɪ̲ɢ̲Ā̲ʀ̲ɪ̲ᴍ̲ᴀ̲ꜱ̲ᴜ̲ ᴋ̲ᴀ̲!̲\"";
             // 
@@ -137,7 +137,7 @@ namespace DoumaZone
             this.MinimizeBox = false;
             this.Name = "guest_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Guest_page:";
+            this.Text = "Guest Page:";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
