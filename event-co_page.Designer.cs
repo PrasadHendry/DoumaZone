@@ -29,6 +29,7 @@ namespace DoumaZone
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(event_co_page));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,6 +54,7 @@ namespace DoumaZone
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -177,7 +179,7 @@ namespace DoumaZone
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(263, 431);
+            this.button5.Location = new System.Drawing.Point(317, 434);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 35);
             this.button5.TabIndex = 39;
@@ -187,7 +189,7 @@ namespace DoumaZone
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(170, 431);
+            this.button4.Location = new System.Drawing.Point(214, 434);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 35);
             this.button4.TabIndex = 38;
@@ -197,7 +199,7 @@ namespace DoumaZone
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(89, 431);
+            this.button3.Location = new System.Drawing.Point(124, 434);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 35);
             this.button3.TabIndex = 37;
@@ -207,7 +209,7 @@ namespace DoumaZone
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(8, 431);
+            this.button6.Location = new System.Drawing.Point(30, 434);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 35);
             this.button6.TabIndex = 36;
@@ -217,7 +219,7 @@ namespace DoumaZone
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(344, 431);
+            this.button7.Location = new System.Drawing.Point(411, 434);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 35);
             this.button7.TabIndex = 40;
@@ -237,7 +239,7 @@ namespace DoumaZone
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(511, 232);
+            this.dataGridView1.Location = new System.Drawing.Point(511, 228);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -251,6 +253,7 @@ namespace DoumaZone
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(135, 27);
             this.textBox2.TabIndex = 43;
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // textBox5
             // 
@@ -258,6 +261,7 @@ namespace DoumaZone
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(135, 27);
             this.textBox5.TabIndex = 44;
+            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
             // monthCalendar1
             // 
@@ -265,11 +269,25 @@ namespace DoumaZone
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 45;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.Control;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(604, 31);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(167, 17);
+            this.label9.TabIndex = 46;
+            this.label9.Text = "Date Format: MM-DD-YYYY";
+            this.label9.Visible = false;
+            // 
             // event_co_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1321, 522);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox2);
@@ -293,12 +311,13 @@ namespace DoumaZone
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "event_co_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "event_co_page";
+            this.Text = "Event Co. Page:";
             this.Load += new System.EventHandler(this.event_co_page_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -332,5 +351,6 @@ namespace DoumaZone
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Label label9;
     }
 }

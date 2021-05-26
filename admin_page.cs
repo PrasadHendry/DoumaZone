@@ -215,15 +215,15 @@ namespace DoumaZone
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.RoyalBlue;
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.DarkOrange;
             dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dataGridView1.BackgroundColor = Color.FromArgb(110, 205, 254);
+            dataGridView1.BackgroundColor = Color.FromArgb(230, 230, 0);
 
             dataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;//optional
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("MS Reference Sans Serif", 10);
-            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(110, 205, 254);
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(230, 230, 0);
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
             
             //-
@@ -231,15 +231,15 @@ namespace DoumaZone
             dataGridView2.BorderStyle = BorderStyle.None;
             dataGridView2.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
             dataGridView2.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridView2.DefaultCellStyle.SelectionBackColor = Color.RoyalBlue;
+            dataGridView2.DefaultCellStyle.SelectionBackColor = Color.DarkOrange;
             dataGridView2.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dataGridView2.BackgroundColor = Color.FromArgb(110, 205, 254);
+            dataGridView2.BackgroundColor = Color.FromArgb(230, 230, 0);
 
             dataGridView2.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;//optional
             dataGridView2.EnableHeadersVisualStyles = false;
             dataGridView2.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView2.ColumnHeadersDefaultCellStyle.Font = new Font("MS Reference Sans Serif", 10);
-            dataGridView2.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(110, 205, 254);
+            dataGridView2.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(230, 230, 0);
             dataGridView2.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
         }
 
