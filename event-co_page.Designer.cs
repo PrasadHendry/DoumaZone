@@ -253,7 +253,7 @@ namespace DoumaZone
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(135, 27);
             this.textBox2.TabIndex = 43;
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            this.textBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox2_MouseClick);
             // 
             // textBox5
             // 
@@ -261,7 +261,7 @@ namespace DoumaZone
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(135, 27);
             this.textBox5.TabIndex = 44;
-            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
+            this.textBox5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox5_MouseClick);
             // 
             // monthCalendar1
             // 

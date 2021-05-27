@@ -178,15 +178,15 @@ namespace DoumaZone
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.DarkOrange;
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
             dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dataGridView1.BackgroundColor = Color.FromArgb(230, 230, 0);
+            dataGridView1.BackgroundColor = Color.FromArgb(255, 140, 26);
 
             dataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;//optional
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("MS Reference Sans Serif", 10);
-            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(230, 230, 0);
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(255, 140, 26);
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
         }
 
@@ -201,6 +201,8 @@ namespace DoumaZone
             textBox3.Text = "";
             textBox4.Text = "";
             textBox5.Text = "";
+
+            label9.Visible = false;
         }
 
         private void event_co_page_Load(object sender, EventArgs e)
@@ -237,12 +239,12 @@ namespace DoumaZone
             }
         }
 
-        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBox2_MouseClick(object sender, MouseEventArgs e)
         {
             label9.Visible = true;
         }
 
-        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBox5_MouseClick(object sender, MouseEventArgs e)
         {
             label9.Visible = true;
         }

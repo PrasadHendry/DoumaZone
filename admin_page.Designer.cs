@@ -225,6 +225,7 @@ namespace DoumaZone
             // 
             // dataGridView2
             // 
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(243, 397);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -236,6 +237,7 @@ namespace DoumaZone
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(367, 97);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

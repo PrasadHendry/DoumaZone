@@ -117,7 +117,7 @@ namespace DoumaZone
 
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "delete from Accounts where Id = '" + textBox1.Text + "'";
+                cmd.CommandText = "select * from Accounts where Id = '" + textBox1.Text + "'";
                 cmd.ExecuteNonQuery();
 
                 DataTable dt = new DataTable();
@@ -125,12 +125,20 @@ namespace DoumaZone
                 da.Fill(dt);
 
                 if (dt.Rows.Count != 0)
+                {
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "delete from Accounts where Id = '" + textBox1.Text + "'";
+                    cmd.ExecuteNonQuery();
+
                     MessageBox.Show("Record Deleted successfully");
+                }
 
                 else
+                {
                     MessageBox.Show("There is no record to be deleted");
-
+                }
                 con.Close();
+
                 display();
             }
 
@@ -215,15 +223,15 @@ namespace DoumaZone
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.DarkOrange;
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
             dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dataGridView1.BackgroundColor = Color.FromArgb(230, 230, 0);
+            dataGridView1.BackgroundColor = Color.FromArgb(255, 140, 26);
 
             dataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;//optional
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("MS Reference Sans Serif", 10);
-            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(230, 230, 0);
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(255, 140, 26);
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
             
             //-
@@ -231,15 +239,15 @@ namespace DoumaZone
             dataGridView2.BorderStyle = BorderStyle.None;
             dataGridView2.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
             dataGridView2.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridView2.DefaultCellStyle.SelectionBackColor = Color.DarkOrange;
+            dataGridView2.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
             dataGridView2.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dataGridView2.BackgroundColor = Color.FromArgb(230, 230, 0);
+            dataGridView2.BackgroundColor = Color.FromArgb(255, 140, 26);
 
             dataGridView2.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;//optional
             dataGridView2.EnableHeadersVisualStyles = false;
             dataGridView2.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView2.ColumnHeadersDefaultCellStyle.Font = new Font("MS Reference Sans Serif", 10);
-            dataGridView2.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(230, 230, 0);
+            dataGridView2.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(255, 140, 26);
             dataGridView2.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
         }
 

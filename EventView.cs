@@ -32,7 +32,7 @@ namespace DoumaZone
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.RoyalBlue;
             dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
             dataGridView1.BackgroundColor = Color.FromArgb(30, 30, 30);
             dataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;//optional
@@ -77,6 +77,8 @@ namespace DoumaZone
         private void button2_Click(object sender, EventArgs e)
         {
             display();
+            textBox1.Text = "";
+            label9.Visible = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -108,6 +110,13 @@ namespace DoumaZone
                 MessageBox.Show("Error: " + ex.Message);
                 con.Close();
             }
+
+            label9.Visible = false;
+        }
+
+        private void textBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            label9.Visible = true;
         }
     }
 }
