@@ -58,7 +58,7 @@ namespace DoumaZone
 
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "update event set event_cat = '" + comboBox1.Text + "', event_name = '" + textBox3.Text + "', event_name = '" + textBox4.Text + "', begin_date = '" + textBox2.Text + "', end_date = '" + textBox5.Text + "' where event_id = '" + textBox1.Text + "'";
+                cmd.CommandText = "update event set event_category = '" + comboBox1.Text + "', event_name = '" + textBox3.Text + "', event_description = '" + textBox4.Text + "', begin_date = '" + textBox2.Text + "', end_date = '" + textBox5.Text + "' where event_id = '" + textBox1.Text + "'";
                 cmd.ExecuteNonQuery();
 
                 con.Close();

@@ -109,6 +109,7 @@ namespace DoumaZone
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(207, 27);
             this.textBox2.TabIndex = 5;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox1
             // 

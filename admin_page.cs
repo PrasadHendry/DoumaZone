@@ -86,7 +86,7 @@ namespace DoumaZone
                     cmd.CommandText = "update Accounts set phone_no = '" + textBox4.Text + "' where Id = '" + textBox1.Text + "'";
 
                 else
-                    cmd.CommandText = "update Accounts set name = '" + textBox2.Text + "', phone_no = '" + textBox4.Text + "' where Id = '" + textBox1.Text + "'";
+                    cmd.CommandText = "update Accounts set username = '" + textBox2.Text + "', phone_no = '" + textBox4.Text + "' where Id = '" + textBox1.Text + "'";
                 
                 cmd.ExecuteNonQuery();
 

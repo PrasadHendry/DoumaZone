@@ -49,6 +49,7 @@ namespace DoumaZone
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(212, 27);
             this.textBox2.TabIndex = 12;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox1
             // 
@@ -57,6 +58,7 @@ namespace DoumaZone
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(212, 27);
             this.textBox1.TabIndex = 11;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -154,7 +156,7 @@ namespace DoumaZone
             this.MinimizeBox = false;
             this.Name = "event_co_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "event_co_login";
+            this.Text = "Event Co. Login:";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
