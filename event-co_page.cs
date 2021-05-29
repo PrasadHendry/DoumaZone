@@ -116,6 +116,12 @@ namespace DoumaZone
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
 
+                if (dt.Rows.Count == 0)
+                    MessageBox.Show("You have not set any events yet.");
+
+                else
+                    MessageBox.Show("These are your events.");
+
                 con.Close();
             }
             catch (Exception ex)

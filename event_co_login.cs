@@ -23,7 +23,6 @@ namespace DoumaZone
         private void button1_Click(object sender, EventArgs e)
         {
             con.Open();
-            // and username != 'admin'
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "select * from Accounts where username = '" + textBox1.Text + "' and password = '" + textBox2.Text + "' ";
@@ -41,6 +40,9 @@ namespace DoumaZone
                 da.Fill(dt);
                 foreach (DataRow row in dt.Rows)
                     id = Convert.ToInt32(row["Id"].ToString());
+
+                cmd.CommandText = "update Accounts set login = 1 where Id = '" + id + "' ";
+                cmd.ExecuteNonQuery();
 
                 con.Close();
 

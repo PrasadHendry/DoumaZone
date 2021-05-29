@@ -127,6 +127,19 @@ namespace DoumaZone
                 if (dt.Rows.Count != 0)
                 {
                     cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "select * from event where event_co_id = '" + textBox1.Text + "'";
+                    cmd.ExecuteNonQuery();
+
+                    da.Fill(dt);
+
+                    if (dt.Rows.Count != 0)
+                    {
+                        cmd.CommandType = CommandType.Text;
+                        cmd.CommandText = "delete from event where event_co_id = '" + textBox1.Text + "'";
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    cmd.CommandType = CommandType.Text;
                     cmd.CommandText = "delete from Accounts where Id = '" + textBox1.Text + "'";
                     cmd.ExecuteNonQuery();
 
@@ -164,6 +177,9 @@ namespace DoumaZone
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
+
+                if (dt.Rows.Count == 0)
+                    MessageBox.Show("No such record to be found");
 
                 con.Close();
             }

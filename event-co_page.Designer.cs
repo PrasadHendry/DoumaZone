@@ -61,6 +61,10 @@ namespace DoumaZone
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Franklin Gothic Heavy", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.Cyan;
+            this.button1.Image = global::DoumaZone.Properties.Resources._103668251_1238927669771766_8325105275115525918_n;
             this.button1.Location = new System.Drawing.Point(1173, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 36);
@@ -71,6 +75,10 @@ namespace DoumaZone
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Franklin Gothic Heavy", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.Color.Cyan;
+            this.button2.Image = global::DoumaZone.Properties.Resources._103668251_1238927669771766_8325105275115525918_n;
             this.button2.Location = new System.Drawing.Point(1173, 63);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 36);
@@ -199,9 +207,13 @@ namespace DoumaZone
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(317, 434);
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Franklin Gothic Heavy", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button5.ForeColor = System.Drawing.Color.Cyan;
+            this.button5.Image = global::DoumaZone.Properties.Resources._103668251_1238927669771766_8325105275115525918_n;
+            this.button5.Location = new System.Drawing.Point(391, 434);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 35);
+            this.button5.Size = new System.Drawing.Size(95, 35);
             this.button5.TabIndex = 39;
             this.button5.Text = "Search";
             this.button5.UseVisualStyleBackColor = true;
@@ -209,7 +221,11 @@ namespace DoumaZone
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(214, 434);
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Franklin Gothic Heavy", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button4.ForeColor = System.Drawing.Color.Cyan;
+            this.button4.Image = global::DoumaZone.Properties.Resources._103668251_1238927669771766_8325105275115525918_n;
+            this.button4.Location = new System.Drawing.Point(290, 434);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 35);
             this.button4.TabIndex = 38;
@@ -219,9 +235,13 @@ namespace DoumaZone
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(124, 434);
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Franklin Gothic Heavy", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.Color.Cyan;
+            this.button3.Image = global::DoumaZone.Properties.Resources._103668251_1238927669771766_8325105275115525918_n;
+            this.button3.Location = new System.Drawing.Point(182, 434);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 35);
+            this.button3.Size = new System.Drawing.Size(90, 35);
             this.button3.TabIndex = 37;
             this.button3.Text = "Update";
             this.button3.UseVisualStyleBackColor = true;
@@ -229,9 +249,13 @@ namespace DoumaZone
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(30, 434);
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Franklin Gothic Heavy", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button6.ForeColor = System.Drawing.Color.Cyan;
+            this.button6.Image = global::DoumaZone.Properties.Resources._103668251_1238927669771766_8325105275115525918_n;
+            this.button6.Location = new System.Drawing.Point(83, 434);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 35);
+            this.button6.Size = new System.Drawing.Size(81, 35);
             this.button6.TabIndex = 36;
             this.button6.Text = "Add";
             this.button6.UseVisualStyleBackColor = true;
@@ -239,9 +263,13 @@ namespace DoumaZone
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(411, 434);
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Franklin Gothic Heavy", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button7.ForeColor = System.Drawing.Color.Cyan;
+            this.button7.Image = global::DoumaZone.Properties.Resources._103668251_1238927669771766_8325105275115525918_n;
+            this.button7.Location = new System.Drawing.Point(83, 475);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 35);
+            this.button7.Size = new System.Drawing.Size(99, 35);
             this.button7.TabIndex = 40;
             this.button7.Text = "Refresh";
             this.button7.UseVisualStyleBackColor = true;
@@ -322,7 +350,7 @@ namespace DoumaZone
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1321, 514);
+            this.ClientSize = new System.Drawing.Size(1321, 523);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.monthCalendar1);

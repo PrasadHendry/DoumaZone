@@ -100,9 +100,13 @@ namespace DoumaZone
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Franklin Gothic Heavy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.Aqua;
+            this.button1.Image = global::DoumaZone.Properties.Resources._103668251_1238927669771766_8325105275115525918_n;
             this.button1.Location = new System.Drawing.Point(233, 209);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 29);
+            this.button1.Size = new System.Drawing.Size(106, 35);
             this.button1.TabIndex = 6;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = true;
