@@ -192,7 +192,8 @@ namespace DoumaZone
             // 
             // comboBox1
             // 
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.Items.AddRange(new object[] {
             "Convention (Anime, Manga, Expos)",
             "Festival (Food, film, music, etc.)",
