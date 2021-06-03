@@ -65,9 +65,9 @@ namespace DoumaZone
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Heavy", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.Cyan;
             this.button1.Image = global::DoumaZone.Properties.Resources._103668251_1238927669771766_8325105275115525918_n;
-            this.button1.Location = new System.Drawing.Point(1173, 12);
+            this.button1.Location = new System.Drawing.Point(1162, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 36);
+            this.button1.Size = new System.Drawing.Size(147, 40);
             this.button1.TabIndex = 1;
             this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = true;
@@ -79,9 +79,9 @@ namespace DoumaZone
             this.button2.Font = new System.Drawing.Font("Franklin Gothic Heavy", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.Cyan;
             this.button2.Image = global::DoumaZone.Properties.Resources._103668251_1238927669771766_8325105275115525918_n;
-            this.button2.Location = new System.Drawing.Point(1173, 63);
+            this.button2.Location = new System.Drawing.Point(1162, 60);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 36);
+            this.button2.Size = new System.Drawing.Size(147, 40);
             this.button2.TabIndex = 2;
             this.button2.Text = "Update Profile";
             this.button2.UseVisualStyleBackColor = true;
@@ -295,6 +295,7 @@ namespace DoumaZone
             this.dataGridView1.Location = new System.Drawing.Point(511, 228);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(798, 274);
