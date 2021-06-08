@@ -12,6 +12,8 @@
 
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="5.0.1" />
+    <PackageReference Include="System.Diagnostics.Process" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>

@@ -152,9 +152,11 @@ namespace DoumaZone
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(160, 135);
+            this.textBox3.Location = new System.Drawing.Point(160, 134);
+            this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(217, 27);
+            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox3.Size = new System.Drawing.Size(248, 31);
             this.textBox3.TabIndex = 29;
             // 
             // textBox4
@@ -311,7 +313,7 @@ namespace DoumaZone
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(683, 98);
+            this.textBox5.Location = new System.Drawing.Point(683, 97);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(135, 27);
             this.textBox5.TabIndex = 44;

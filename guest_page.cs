@@ -36,7 +36,8 @@ namespace DoumaZone
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("There is no info.");
+            Info inf = new Info();
+            inf.Show();
         }
     }
 }
