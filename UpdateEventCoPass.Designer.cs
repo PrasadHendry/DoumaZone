@@ -152,6 +152,7 @@ namespace DoumaZone
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UpdateEventCoPass";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update Event Co. Profile:";
             this.Load += new System.EventHandler(this.UpdateEventCoPass_Load);
             this.ResumeLayout(false);

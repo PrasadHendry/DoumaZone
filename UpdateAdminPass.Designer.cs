@@ -130,6 +130,7 @@ namespace DoumaZone
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UpdateAdminPass";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update Admin Password:";
             this.ResumeLayout(false);
             this.PerformLayout();

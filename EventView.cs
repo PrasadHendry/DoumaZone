@@ -79,6 +79,7 @@ namespace DoumaZone
             display();
             textBox1.Text = "";
             label9.Visible = false;
+            label2.Visible = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -112,11 +113,13 @@ namespace DoumaZone
             }
 
             label9.Visible = false;
+            label2.Visible = false;
         }
 
         private void textBox1_MouseClick(object sender, MouseEventArgs e)
         {
             label9.Visible = true;
+            label2.Visible = true;
         }
     }
 }
